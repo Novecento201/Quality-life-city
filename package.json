@@ -24,7 +24,9 @@
   },
   "name": "progetto-js-adv-s2i",
   "version": "1.0.0",
-  "main": "babel.config.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
 }
