@@ -1,0 +1,130 @@
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss ***!
+  \**********************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap);
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss (1) ***!
+  \**************************************************************************************************************************************************************/
+:root {
+  --hue-color: 250;
+  --first-color: hsl(var(--hue-color) 69% 61%);
+  --first-color-alt: hsl(var(--hue-color) 57% 53%);
+  --first-color-lighter: hsl(var(--hue-color) 92% 85%);
+  --first-color-strong: hsl(var(--hue-color) 92% 75%);
+  --title-color: hsl(var(--hue-color) 8% 15%);
+  --body-color: hsl(var(--hue-color) 60% 99%);
+  --body-color-lighter: hsl(var(--hue-color) 16% 94%);
+  --container-color: hsl(var(--hue-color) 63% 97.5%);
+  --scroll-bar-color: hsl(var(--hue-color) 12% 90%);
+  --scroll-thumb-color: hsl(var(--hue-color) 12% 80%);
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Font family from google */
+:root {
+  font-size: 62.5%;
+  --body-font: "Poppins", sans-serif;
+  --text-color: hsl(var(--hue-color) 8% 45%);
+  --text-color-light: hsl(var(--hue-color) 8% 65%);
+  --input-color: hsl(var(--hue-color) 70% 96%);
+  --big-font-size: 2rem;
+  --normal-font-size: 1.6rem;
+  --small-font-size: 1.2rem;
+  --smaller-font-size: 1rem;
+  --font-small: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+
+.btn-1 {
+  display: flex;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.btn-1:hover {
+  transform: scale(0.9);
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: hsl(250, 12%, 90%);
+  background-color: var(--scroll-bar-color);
+  border: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(250, 12%, 80%);
+  background-color: var(--scroll-thumb-color);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(250, 8%, 65%);
+  background-color: var(--text-color-light);
+}
+
+/* BASE */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: var(--body-font);
+  font-size: 1.6rem;
+  font-size: var(--normal-font-size);
+  background-color: hsl(250, 60%, 99%);
+  background-color: var(--body-color);
+  color: hsl(250, 8%, 45%);
+  color: var(--text-color);
+  position: relative;
+}
+
+h1.h2.h3.h4 {
+  color: hsl(250, 8%, 15%);
+  color: var(--title-color);
+  font-weight: 600;
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+strong {
+  color: hsl(250, 69%, 61%);
+  color: var(--first-color);
+  font-size: 1.8rem;
+}
+
+main {
+  position: relative;
+}
+
+/*# sourceMappingURL=main.css.map*/

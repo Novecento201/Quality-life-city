@@ -1,0 +1,15 @@
+// Example of extends comand a
+%btn {
+  display: flex;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
+.btn-1 {
+  @extend %btn;
+}

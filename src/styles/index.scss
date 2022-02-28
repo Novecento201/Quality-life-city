@@ -1,0 +1,74 @@
+@import "var";
+@import "utility";
+@import "font";
+@import "btn";
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: var(--scroll-bar-color);
+  border: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
+
+/* BASE */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  position: relative;
+}
+
+h1.h2.h3.h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+strong {
+  color: var(--first-color);
+  font-size: 1.8rem;
+}
+
+main {
+  position: relative;
+}
