@@ -17,185 +17,59 @@
     <title>Quality life city</title>
 </head>
 <body>
-    <main>
-        <header>
-            <h1 class="title">Quality city life</h1>
-            <div class="input__container">
-                <input type="search" id="input-search" class="input__search">
-                <button type="submit" id="btn-search" class="btn__search">
+
+    <header>
+        <h1 class="title">Quality city life</h1>
+        <div class="input__container">
+            <div>
+                <input 
+                type="search" 
+                id="input-search"
+                class="input__search"
+                placeholder="Search a city">
+                <button type="submit" id="btn-search" class="btn__search btn">
                     <i class="fas fa-search"></i>
                 </button>
-                <div id="error-message" class="error__message" >Your city is not in Teleport API</div>
             </div>
-        </header>
-        <!-- LEFT CONTAINER -->
-        <section>
-            <img src="IMG/img_city.svg" alt="city illustration">
-            <div class="info">
+            <div id="error-message" class="error__message"></div>
+        </div>
+    </header>
+
+    <!-- RIGHT CONTAINER -->
+    <section class="right__container">
+        <h1 id="city-name" class="city__name"></h1>
+
+        <div class="container__summary">
+            <p id="summary-text"></p>
+        </div>
+
+        <div class="container__scores" id="container-scores">
+
+        </div>
+
+    </section>
+
+    <!-- LEFT CONTAINER -->
+    <section class="left__container">
+
+        <img src="IMG/img_city.svg" alt="city illustration" class="img__city">
+
+        <div class="container__info">
+
+            <div class="text__info">
                 This project is for Start2Impact Javascript section.<br>
-                The project requires the use of the <a href="https://api.teleport.org/api/urban_areas/slug:los-angeles/scores/" target="_blank">Teleport API</a> to retrieve information on the quality of life in cities.
+                The project requires the use of the <a href="https://developers.teleport.org/" target="_blank">Teleport API</a> to retrieve information on the quality of life in cities.
             </div>
+
             <div class="socials">
-                <a href="https://github.com/Novecento201" target="_blank"><i class="fab fa-github"></i>Github</a>
-                <a href="https://www.linkedin.com/in/marco-lovato-3816a3229/" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a>
-                <a href="https://talent.start2impact.it/profile/marco-lovato-a869" target="_blank"><i class="fas fa-user-circle"></i>Start2Impact</a>
-            </div>
-        </section>
-
-        <!-- RIGHT CONTAINER -->
-        <section>
-            <h1 id="city-name" class="title">Name city</h1>
-
-            <div class="city__text">
-                <p data-summary>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum vero error perferendis itaque repudiandae doloremque eveniet quidem atque sapiente in maiores, animi molestias ipsa voluptas enim dicta, distinctio totam?</p>
+                <a href="https://github.com/Novecento201" target="_blank" alt="Github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/marco-lovato-3816a3229/" target="_blank" alt="Linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://talent.start2impact.it/profile/marco-lovato-a869" target="_blank" alt="Start2Impact"><i class="fas fa-user-circle"></i></a>
             </div>
 
-            <div class="container__scores">
-
-                <div class="score">
-                    <h2 class="name__score">Housing</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Cost of living</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Startups</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Venture Capital</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Travel Connectivity</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Commute</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Business Freedom</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Safety</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Healthcare</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Education</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Environmental Quality</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Economy</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Taxation</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Internet Access</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Leisure & Culture</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Tolerance</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h2 class="name__score">Overall</h2>
-                    <span class="value__score">0/10</span>
-                    <div class="score__bar">
-                        <div class="empy"></div>
-                    </div>
-                </div>
-
-                <button class="teleport__btn">
-                    <a class="teleport__link" target="_blank">For more info</a>
-                </button>
-            </div>
-
-        </section>
-    </main>
-
+        </div>
+    </section>
+    
 <!-- JS -->
 <script src="main.js"></script>
     
