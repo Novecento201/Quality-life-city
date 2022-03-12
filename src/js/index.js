@@ -58,8 +58,6 @@ function fetchCity(){
 
             
             setData()
-            
-            console.log(response);
         })
         .catch(err => {
             if (err.response.status === 404) {
@@ -128,7 +126,6 @@ function setData(){
     </div>
     `
 
-    console.log(url)
 }
 
 
