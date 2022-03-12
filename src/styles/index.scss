@@ -129,6 +129,7 @@ strong {
   .error__message {
     margin: 1.5rem 0 2rem;
     color: red;
+    text-align: center;
   }
 }
 
@@ -251,7 +252,7 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 100%;
   max-width: 1000px;
   z-index: -1;
-  margin: 0 2rem;
+  padding: 0 2rem;
 }
 
 .container__info {
