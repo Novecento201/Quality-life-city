@@ -2,6 +2,7 @@
   body {
     position: relative;
     display: grid;
+    height: 100vh;
     grid-template: auto / repeat(2, 1fr);
     grid-template-areas:
       "left right"
@@ -21,6 +22,11 @@
   }
   .right__container {
     grid-area: right;
+    background-color: white;
+    overflow: scroll;
+
+  }::-webkit-scrollbar {
+    display: none;
   }
 
   .city__name {
